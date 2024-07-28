@@ -6,7 +6,7 @@ async function main() {
   await contract.waitForDeployment();
   const deployedContract = await contract.getAddress();
   fs.writeFileSync("contract.txt", deployedContract);
-  console.log(`Contract deployed to: ${deployedContract}`)
+  console.log(`Contract deployed to: ${deployedContract}`);
 }
 
 main().catch((error) => {
